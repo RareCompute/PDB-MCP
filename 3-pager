@@ -1,0 +1,76 @@
+Page 1 / Block 1
+
+PDB-MCP in One Sentence
+
+PDB-MCP (Protein-Data-Bank Model Context Provider) is an open micro-service that lets AI agents tap the RCSB PDB—the world’s 3-D protein archive—through a standards-based MCP interface. Educators, researchers, and startups gain instant, token-light access to structure summaries, paving the way for smarter BioML workflows.
+Illustration: Stylized plug icon joining a DNA-shaped cable to a cloud labelled “RCSB PDB”.
+
+Page 1 / Block 2
+
+Why Fast Structural Access Matters
+
+BioML (Biological Machine Learning) models hunger for curated 3-D data. Traditional downloads are bulky and rate-limited, slowing design loops in immunotherapy, oncology, and enzyme engineering. PDB-MCP delivers right-sized context bundles—title, method, resolution, ligands—so RL (Reinforcement Learning) design agents can iterate in seconds, not hours.
+Illustration: Split panel—left shows a snail dragging a giant PDB file; right shows a rocket receiving a compact JSON packet.
+
+Page 1 / Block 3
+
+Our Guiding Principles
+	1.	Open—MIT-licensed code, CC-BY-4.0 data.
+	2.	Inclusive—runs locally on a laptop or in Kubernetes.
+	3.	Composable—plugs into any MCP-aware LLM.
+	4.	Reproducible—built-in provenance for every query.
+Together these principles democratize discovery for classrooms and cutting-edge labs alike.
+Illustration: Four interlocking puzzle pieces labelled Open, Inclusive, Composable, Reproducible.
+
+⸻
+
+Page 2 / Block 4
+
+Inside a Dynamic Dataset
+
+An agent calls get_structure("1ABC"); PDB-MCP returns a 2 KB JSON: chains, organism, resolution, plus a ligand list with counts. Agents remix these slices into function-specific datasets—say, kinase active-sites—with zero manual curation. Metadata stays FAIR (Findable, Accessible, Interoperable, Reusable) by design.
+Illustration: A chef-bot combining small labelled bowls (chains, ligands, resolution) into a platter marked “Kinase Set”.
+
+Page 2 / Block 5
+
+How the Service Works
+
+Step-by-step:
+	1.	Agent sends JSON-RPC via MCP.
+	2.	FastAPI server queries RCSB PDB once, caches the result.
+	3.	Pydantic models validate & compress data.
+	4.	Agent receives schema-guaranteed context—no scraping required.
+	5.	RL tuner scores outcomes; agent tweaks queries, closing the learn-design-test loop.
+Illustration: Flow diagram—Agent → PDB-MCP → RCSB PDB → Cache → Agent (loop arrow back).
+
+Page 2 / Block 6
+
+Pilot: Smarter Immunotherapy Leads
+
+A student team at Cedars will use the system to find and process immuno therapy compounds, great acclerating time to deploy new spatial multi-omics therparies.
+Illustration: Papers or immuno therapy molecule and spatial transcriptomic imaging.
+
+⸻
+
+Page 3 / Block 7
+
+Roadmap to Scale
+
+Q3 2025: Redis cache + full-text search.
+Q1 2026: GraphQL batching & computed AlphaFold models.
+2026-2027: Federation into the OpenBioML Network so classrooms worldwide share cached slices, cutting compute costs by 70 %.
+Illustration: Milestone timeline arrow sweeping upward with three flagposts labelled Q3-25, Q1-26, 2027.
+
+Page 3 / Block 8
+
+Growing Partner Circle
+
+Current collaborators include Dell Technologies, UCLA Medicine, the Quantum Biology Research Institute, UCSD Marine Science, Long Covid Labs, and Cedars-Sinai Oncology. We welcome additional educators, cloud providers, and citizen-science communities to expand equitable access.
+Illustration: Concentric circles of logos/orbitals around a central PDB-MCP icon.
+
+Page 3 / Block 9
+
+Call to Action
+
+Clone the repo, run docker compose up, and plug your LLM in minutes. Contribute tests, open issues, or fund roadmap features. Together we’ll accelerate regenerative medicine, greener chemistry, and global science literacy. Visit github.com/your-org/pdb-mcp-server to get started.
+Illustration: Diverse group of scientists and students high-fiving over a glowing laptop displaying the repo URL.
