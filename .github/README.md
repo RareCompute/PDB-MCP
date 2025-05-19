@@ -1,6 +1,6 @@
 # PDB‑MCP Server
 
-Democratising structural biology context for **BioML‑driven drug discovery** via Anthropic’s Model Context Protocol and the RCSB Protein Data Bank.
+A Decentralize Model Context Protocol Server for agentic access to the RCSD Protein Databank system. Allows for decentralized BioML agents to access high quality structured compound data on demand, opening a range of new possiblities in BioML acclerated medicine research and discovery.
 
 > *“Every scientist—human or machine—deserves friction‑free access to structural knowledge.”*
 
@@ -10,7 +10,7 @@ Democratising structural biology context for **BioML‑driven drug discovery** v
 
 Modern protein‐structure data powers generative chemistry, docking, and ML retrosynthesis. Yet most agents still screen‑scrape or download giant coordinate files. **PDB‑MCP** turns the RCSB Protein Data Bank into a *tool‑callable*, *token‑efficient*, and *cache‑friendly* source of truth. Running as a tiny FastAPI micro‑service, it exposes JSON‑RPC methods (`get_structure`, `get_ligand`, *optional* `search_structures`) that comply with Anthropic’s MCP spec—so any LLM agent can pull concise context bundles on‑demand.
 
-The Rare Compute Foundation has built this project to support the **decentralised** and **equitable** development of BioML tools and agents in partnership with Bio.XYZ and as part of the Bio.XYZ Agents hackathon. Our design emphasises **decentralised** deployment (Docker or local CLI) so classrooms, hackerspaces, and startups can host their own mirror without central gatekeepers. Combined with open‑source code, this levels the playing field for global BioML research.
+The Rare Compute Foundation has built this project to support the **decentralised** and **equitable** development of BioML tools and agents in partnership with Bio.XYZ and as part of the Bio.XYZ Scientific Agents hackathon. Our design emphasises **decentralised** deployment (Docker or local CLI) so classrooms, hackerspaces, and startups can host their own mirror without central gatekeepers. Combined with open‑source code, this levels the playing field for global BioML research.
 
 We will continue to develop and improve this project as part of our mission to support the development of equitable and decentralised BioML tools and agents, and will release it under the MIT license. Additional Rare Compute and Bio.XYZ will partner to deploy this system to serve a number of biologic compound design initatives within the DeSci space.
 
