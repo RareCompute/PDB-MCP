@@ -1,0 +1,9 @@
+httpx
+pydantic
+fastapi
+uvicorn[standard]
+
+# Testing
+pytest
+pytest-asyncio
+respx
