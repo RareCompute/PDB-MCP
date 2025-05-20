@@ -2,6 +2,7 @@
 # Context Summary
 
 *Purpose*: 
+
 This is the core Python package for the PDB-MCP server, designed to democratize access to structural biology data for AI/ML applications. It contains all application logic: API endpoints, PDB data fetching, data processing/caching, and schema definitions, enabling the creation of token-efficient datasets for BioML agents.
 
 *Interacts with*: 
