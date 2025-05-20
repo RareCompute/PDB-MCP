@@ -1,8 +1,14 @@
 
 # Context Summary
 
-*Purpose*: This is the core Python package for the PDB-MCP server, designed to democratize access to structural biology data for AI/ML applications. It contains all application logic: API endpoints, PDB data fetching, data processing/caching, and schema definitions, enabling the creation of token-efficient datasets for BioML agents.
-*Interacts with*: External clients (e.g., BioML agents via HTTP GET to `/structure/{pdb_id}`), the RCSB PDB API (via `httpx`). (Future: full MCP support via `/mcp` POST). The internal `LRUCache` is currently used, with potential for other cache backends.
+*Purpose*: 
+This is the core Python package for the PDB-MCP server, designed to democratize access to structural biology data for AI/ML applications. It contains all application logic: API endpoints, PDB data fetching, data processing/caching, and schema definitions, enabling the creation of token-efficient datasets for BioML agents.
+
+*Interacts with*: 
+* External clients (e.g., BioML agents via HTTP GET to `/structure/{pdb_id}`)
+* The RCSB PDB API (via `httpx`).
+* (Future: full MCP support via `/mcp` POST). The internal `LRUCache` is currently used, with potential for other cache backends.
+
 *Key features / constraints*:
     1. Provides a FastAPI endpoint (`/structure/{pdb_id}`) for retrieving PDB data. (Future: Aims to fully implement Anthropic's Model Context Protocol (MCP) specification for JSON-RPC via an `/mcp` endpoint).
     2. Uses FastAPI for the web server and Pydantic for data validation/schemas.
